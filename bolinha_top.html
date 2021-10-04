@@ -1,19 +1,15 @@
-<canvas width="600" height="400"></canvas>
+<canvas width="1000" height="600"></canvas>
 
 <script>
     var tela = document.querySelector('canvas');
     var pincel = tela.getContext('2d');
 
     pincel.fillStyle = 'grey';
-    pincel.fillRect(0, 0, 600, 400);
+    pincel.fillRect(0, 0, 1000, 600);
 
     var cores = ['blue', 'red', 'green'];
     var indiceCorAtual = 0; 
     var raio = 5;
-
-    alert("Com esse programa é possível trocar a cor da bolinha apertando o botão direito do mouse");
-    alert("E pressionando SHIFT você faz com que a bolinha aumente de tamanho");
-    alert("Ao pressionar ALT a bolinha vai voltando ao seu tamanho inicial");
 
     function desenhaCirculo(evento) {
 

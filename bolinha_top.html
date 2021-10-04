@@ -11,6 +11,10 @@
     var indiceCorAtual = 0; 
     var raio = 5;
 
+    alert("Com esse programa é possível trocar a cor da bolinha apertando o botão direito do mouse");
+    alert("E pressionando SHIFT você faz com que a bolinha aumente de tamanho");
+    alert("Ao pressionar ALT a bolinha vai voltando ao seu tamanho inicial");
+
     function desenhaCirculo(evento) {
 
         var x = evento.pageX - tela.offsetLeft;
@@ -25,7 +29,7 @@
         } else if(evento.shiftKey && raio + 10 <= 100) {
             raio = raio + 10;
 
-        } else if(evento.altKey && raio - 5 >= 10) {
+        } else if(evento.altKey && raio - 5 >= 5) {
             raio = raio - 5;
 
         }
